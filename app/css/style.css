@@ -208,7 +208,218 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.section-expert {
+  padding: 80px 0;
+}
+
+.section-expert-title {
+  color: #3C2415;
+  font-size: 28px;
+  margin-bottom: 0;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.section-expert-desc {
+  color: #fff;
+  background: #3C2415;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  width: max-content;
+  margin-bottom: 20px;
+}
+
+.section-expert .section-title {
+  color: #C99431;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.section-expert .item {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.section-expert .item b {
+  color: #3C2415;
+}
+
+.section-expert .item-title {
+  margin-bottom: 5px;
+}
+
+.section-expert ul {
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.section-expert ul li::marker {
+  color: #C99431;
+  font-size: 18px;
+}
+
+.section-expert .box-img {
+  position: relative;
+}
+
+.section-expert .box-img-text {
+  border: 1px solid #C99431;
+  background: #fff;
+  font-size: 17px;
+  color: #3C2415;
+  padding: 15px 31px;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  margin: -100px auto 0 auto;
+  font-weight: 700;
+}
+
+.section-expert .box-img-text::before {
+  content: '';
+  position: absolute;
+  background: url(/images/qout2.png) no-repeat;
+  width: 24px;
+  height: 19px;
+  left: 8px;
+  top: 16px;
+}
+
+.section-expert .box-img-text::after {
+  content: '';
+  position: absolute;
+  background: url(/images/qout1.png) no-repeat;
+  width: 24px;
+  height: 19px;
+  right: 8px;
+  top: 16px;
+}
+
+.section-solution .box-img {
+  background: #FFF0D4;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-solution .box-img-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #D09C38;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 13px;
+}
+
+.section-solution .box-content {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.section-solution .box-content-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.section-solution .box-content-item:not(:nth-child(2)) {
+  margin-left: -30px;
+}
+
+.section-solution .box-content-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.section-solution .box-content-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.section-solution .box-content-desc {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.section-solution .box-content-text {
+  background: #FFF4DF;
+  border-radius: 16px;
+  padding: 25px;
+  position: absolute;
+  padding-left: 100px;
+  width: 85%;
+  left: 60px;
+  z-index: -1;
+}
+
+.section-solution .box-content-img {
+  position: relative;
+  flex-shrink: 0;
+  background: rgba(208, 156, 56, 0.5);
+  width: 145px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 20px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 575px) {
+  .section-solution .box-img {
+    margin-bottom: 20px;
+  }
+  .section-solution .box-content-item:not(:nth-child(2)) {
+    margin-left: 0;
+  }
+  .section-solution .box-content-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .section-solution .box-content-img {
+    width: 120px;
+    aspect-ratio: 120px;
+  }
+  .section-solution .box-content-title {
+    font-size: 16px;
+  }
+  .section-solution .box-content-text {
+    height: 100%;
+    left: 40px;
+    padding: 15px;
+    padding-left: 90px;
+    width: 90%;
+  }
+  .section-expert {
+    padding: 60px 0;
+  }
+  .section-expert-title {
+    font-size: 24px;
+    margin-bottom: 13px;
+  }
+  .section-expert-desc {
+    font-size: 18px;
+  }
+  .section-expert .section-title {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+  .section-expert .box-img-text {
+    width: 95%;
+    font-size: 15px;
+  }
   .sc-homeform {
     background: url(/images/bg-form-home-mb.png) no-repeat;
     background-size: cover;
